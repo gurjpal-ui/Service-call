@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3f3f3;
+  color: #222;
+}
+
+.app {
+  max-width: 1100px;
+  margin: 24px auto;
+  padding: 28px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  border-bottom: 4px solid #f6c400;
+  padding-bottom: 18px;
+  margin-bottom: 24px;
+}
+
+.logo {
+  width: 220px;
+  max-width: 45%;
+  height: auto;
+}
+
+h1 {
+  margin: 0;
+  font-size: 30px;
+  text-align: right;
+}
+
+.header p {
+  margin: 6px 0 0;
+  text-align: right;
+  color: #555;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 28px 0 14px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 8px;
+}
+
+.top-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.full {
+  grid-column: 1 / -1;
+}
+
+.field label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #b9b9b9;
+  border-radius: 8px;
+  background: #fff;
+}
+
+textarea {
+  min-height: 82px;
+  resize: vertical;
+}
+
+.unit-card {
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 18px;
+  margin-bottom: 14px;
+}
+
+.unit-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.unit-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1.4fr;
+  gap: 16px;
+}
+
+.remove-unit {
+  background: #eee;
+  color: #222;
+  border: none;
+  border-radius: 7px;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 26px;
+  flex-wrap: wrap;
+}
+
+button {
+  border: none;
+  border-radius: 9px;
+  padding: 14px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.primary {
+  background: #f6c400;
+  color: #111;
+}
+
+.secondary {
+  background: #222;
+  color: #fff;
+}
+
+.muted {
+  background: #e7e7e7;
+  color: #111;
+}
+
+.filename-preview {
+  margin-top: 18px;
+  background: #fff7cc;
+  border: 1px solid #f6c400;
+  padding: 13px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+@media (max-width: 850px) {
+  .app {
+    margin: 0;
+    border-radius: 0;
+    padding: 18px;
+  }
+
+  .header {
+    display: block;
+  }
+
+  .logo {
+    max-width: 100%;
+    width: 210px;
+  }
+
+  h1, .header p {
+    text-align: left;
+  }
+
+  .top-grid, .form-grid, .unit-grid {
+    display: block;
+  }
+
+  .field {
+    margin-bottom: 14px;
+  }
+}
