@@ -162,8 +162,8 @@ function generatePdf() {
   addText(doc, "Date", date, 40, y);
   addText(doc, "Time", time, 330, y);
   y += 24;
-  addText(doc, "Call Taken By", callTakenBy, 40, y);
-  addText(doc, "Service Tech", serviceTech, 330, y);
+  addText(doc, "Call Taken By", callTakenBy, 40, y) + 24;
+  addText(doc, "Service Tech", serviceTech, 330, y) + 24;
 
   y += 32;
   doc.setDrawColor(0, 0, 0);
@@ -171,12 +171,12 @@ function generatePdf() {
   doc.line(40, y, 572, y);
   y += 28;
 
-  addText(doc, "Customer Name", customerName, 40, y); y += 24;
-  addText(doc, "Phone Number", phoneNumber, 40, y); y += 24;
-  addText(doc, "Service Location", serviceLocation, 40, y); y += 24;
-  addText(doc, "Driver Name", driverName, 40, y); y += 24;
-  addText(doc, "Driver Phone", driverPhone, 40, y); y += 24;
-  addText(doc, "PO Number", poNumber, 40, y); y += 34;
+  addText(doc, "Customer Name", customerName, 40, y) + 24;
+  addText(doc, "Phone Number", phoneNumber, 40, y) + 24;
+  addText(doc, "Service Location", serviceLocation, 40, y) + 24;
+  addText(doc, "Driver Name", driverName, 40, y) + 24;
+  addText(doc, "Driver Phone", driverPhone, 40, y) + 24;
+  addText(doc, "PO Number", poNumber, 40, y) + 34;
 
   doc.setFont("helvetica", "bold");
   doc.setFontSize(13);
